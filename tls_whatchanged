@@ -105,3 +105,8 @@ Changes made
 - handler.c|h
     - Adding a CONSTVAR ref_tlshandshake
     - Adding type_tls_handshake field to output_handler_t structure
+
+- output.c
+    - For each process (length computation, checksum computation and dispatch of data)
+        - Manage type_file TLS exchange
+        - TODO: Manage type_generator TLS exchange
